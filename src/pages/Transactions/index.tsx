@@ -4,6 +4,7 @@ import { SearchForm } from "../../components/SearchForm";
 import { Summary } from "../../components/Summary";
 import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styles";
 import { TransactionsContext } from "../../contexts/TransactionsContext";
+import { dateFormatter, priceFormatter } from "../../ultis/formatter";
 
 interface Transaction {
     id: number;
@@ -35,11 +36,12 @@ export function Transaction(){
                                     <td>{transaction.description}</td>
                                     <td>
                                         <PriceHighlight variant={transaction.type}>
-                                            R${transaction.price}
+                                            {transaction.type === 'outcome' && '- '}
+                                            {priceFormatter.format(transaction.price)}
                                         </PriceHighlight>
                                     </td>
                                     <td>{transaction.category}</td>
-                                    <td>{transaction.createdAt}</td>
+                                    <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
                                 </tr>
                             )
                         })}
