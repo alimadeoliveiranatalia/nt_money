@@ -1,20 +1,52 @@
 {
-    "transactions" : [
-        {
-            "id": 1,
-            "description":"Desenvolvimento de Site",
-            "type": "income",
-            "category":"Venda",
-            "price":"14000",
-            "createdAt":"2023-05-15T22:58:13.720Z"
-        },
-        {
-            "id": 2,
-            "description":"Hamburger",
-            "type": "outcome",
-            "category":"Alimentação",
-            "price":"50",
-            "createdAt":"2023-05-13T22:13:13.720Z"
-        }
-    ]
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de Site",
+      "type": "income",
+      "category": "Venda",
+      "price": 3000,
+      "createdAt": "2023-05-15T22:58:13.720Z"
+    },
+    {
+      "id": 2,
+      "description": "SportFy",
+      "type": "outcome",
+      "category": "Entretenimento",
+      "price": 20,
+      "createdAt": "2023-05-13T22:13:13.720Z"
+    },
+    {
+      "id": 3,
+      "description": "Parcela Notebook",
+      "type": "outcome",
+      "category": "Trabalho",
+      "price": 50,
+      "createdAt": "2023-05-18T22:13:13.720Z"
+    },
+    {
+      "id": 4,
+      "description": "Adiantamento Quinzenal",
+      "type": "income",
+      "category": "Salário",
+      "price": 500,
+      "createdAt": "2023-05-15T22:13:13.720Z"
+    },
+    {
+      "description": "Tesouro Direto",
+      "price": 40,
+      "category": "Investimentos",
+      "type": "outcome",
+      "createdAt": "2023-05-21T19:11:59.376Z",
+      "id": 5
+    },
+    {
+      "description": "Pós graduação",
+      "price": 99,
+      "category": "Educação",
+      "type": "outcome",
+      "createdAt": "2023-05-21T19:35:02.688Z",
+      "id": 6
+    }
+  ]
 }

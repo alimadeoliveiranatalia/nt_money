@@ -21,6 +21,5 @@ export function useSummary(){
             total: 0
         }
     );
-
     return summary;
 }
